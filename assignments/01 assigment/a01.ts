@@ -27,9 +27,31 @@ function calcFact(n: number): number {
         fact = fact * i
     }
     return fact
-}
+}   
 
 
 // 🔹 Q5: Even Odd Checke Function
 
+function isEven(n:number): boolean {
+    if (n % 2 == 0){
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(isEven(7));
+
+
 //  🔹 Q6: Sum of Array Elements
+
+function sumArray(n: number[]): number{
+    let total: number = 0
+    n.forEach(element => {
+        total = total + element 
+    });
+    return total
+}
+
+console.log(sumArray([1, 2, 3, 4, 5]));

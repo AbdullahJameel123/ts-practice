@@ -19,4 +19,21 @@ function calcFact(n) {
     }
     return fact;
 }
-console.log("Factorial of ".concat(5, " = ").concat(calcFact(5)));
+// 🔹 Q5: Even Odd Checke Function
+function isEven(n) {
+    if (n % 2 == 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(isEven(7));
+//  🔹 Q6: Sum of Array Elements
+function sumArray(n) {
+    var total = 0;
+    n.forEach(function (element) {
+        return total = total + element;
+    });
+}
+console.log(sumArray([1, 2, 3, 4, 5]));
